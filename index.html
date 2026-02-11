@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- UnicornStudio Background Animation -->
-    <div data-us-project="7435Gn6kTQc9rnwecl0E" id="unicorn-bg"></div>
+    <div data-us-project="IC5FNs23uGNpgjkR1Jcl" id="unicorn-bg"></div>
 
     <!-- MAIN CONTAINER-->
     <div class="container">
@@ -17,7 +17,7 @@
         <div class="header-content">
           <!-- Profile Picture -->
           <img
-            src="./assets/images/profilepic-x2.png"
+            src="./assets/images/profilepic-x2-opt.png"
             alt="Iman Nazri"
             class="profile-pic"
           />
@@ -40,15 +40,15 @@
                   class="social-icon"
                   aria-label="Website"
                 >
-                  <img src="./assets/icons/GithubLogo.svg"
-                /></a>
+                  <img src="./assets/icons/GithubLogo.svg" alt="GitHub" />
+                </a>
                 <a
                   href="https://x.com/ImnNazri"
                   class="social-icon"
                   aria-label="Twitter"
                 >
-                  <img src="./assets/icons/XLogo.svg" alt="Twitter"
-                /></a>
+                  <img src="./assets/icons/XLogo.svg" alt="Twitter" />
+                </a>
                 <a
                   href="mailto:hye.imannazri@gmail.com"
                   class="social-icon"
@@ -64,30 +64,36 @@
 
       <!-- MAIN CONTENT -->
       <main>
-        <!-- Navigation Tabs -->
-        <nav class="content-nav">
-          <a href="#projects" class="nav-tab active">[>_] PROJECTS</a>
-          <a href="#coded-components" class="nav-tab">[⬥] UI</a>
-          <a href="#writings" class="nav-tab">[✻] THOUGHTS</a>
-        </nav>
-
         <!-- Projects Section -->
         <section id="projects" class="content-section">
+          <!-- Section Header -->
+          <div class="section-header">
+            <h2 class="section-title">HIGHLIGHTED PROJECTS</h2>
+          </div>
+
           <!-- Project Items -->
           <article class="project-item">
             <div class="project-info">
               <div class="project-meta">
                 <span class="project-number">01</span>
                 <span class="separator">/</span>
-                <span class="project-name"
-                  >Solscan - Token Holders Visualizer</span
-                >
+                <span class="project-name">
+                  Solscan - Token Holders Visualizer
+                </span>
               </div>
               <a
                 href="https://solscan.io/token/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN?visualize=true#holders"
                 class="project-link"
-                >View</a
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                View
+                <img
+                  src="./assets/icons/arrow-out.svg"
+                  alt=""
+                  class="external-link-icon"
+                />
+              </a>
             </div>
 
             <div class="project-preview">
@@ -101,14 +107,15 @@
 
             <div class="project-preview">
               <img
-                src="./assets/images/token-holders-x2.jpg"
+                src="./assets/images/token-holders-x2-opt.jpg"
                 alt="Project Preview"
                 loading="lazy"
               />
             </div>
+
             <div class="project-preview">
               <img
-                src="./assets/images/tx-flow-02.jpg"
+                src="./assets/images/tx-flow-02-opt.jpg"
                 alt="Project Preview"
                 loading="lazy"
               />
@@ -122,11 +129,24 @@
                 <span class="separator">/</span>
                 <span class="project-name">Etherscan - Assets Tab</span>
               </div>
-              <a href="#" class="project-link">View</a>
+              <a
+                href="https://etherscan.io/address/0x50EC05ADe8280758E2077fcBC08D878D4aef79C3#asset-multichain"
+                class="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View
+                <img
+                  src="./assets/icons/arrow-out.svg"
+                  alt=""
+                  class="external-link-icon"
+                />
+              </a>
             </div>
+
             <div class="project-preview">
               <img
-                src="./assets/images/asset-tab2_5.jpg"
+                src="./assets/images/asset-tab2_5-opt.jpg"
                 alt="Project Preview"
                 loading="lazy"
               />
@@ -138,11 +158,10 @@
               <div class="project-meta">
                 <span class="project-number">03</span>
                 <span class="separator">/</span>
-                <span class="project-name"
-                  >Ollio - Compound Portfolio Tracker</span
-                >
+                <span class="project-name">
+                  Ollio - Compound Portfolio Tracker
+                </span>
               </div>
-              <a href="#" class="project-link">View</a>
             </div>
 
             <div class="project-preview">
@@ -156,31 +175,77 @@
 
             <div class="project-preview">
               <img
-                src="./assets/images/ollio-2x-02.jpg"
+                src="./assets/images/ollio-2x-02-opt.jpg"
                 alt="Project Preview"
                 loading="lazy"
               />
             </div>
           </article>
-
-          <!-- Add more project items here -->
-        </section>
-
-        <!-- Coded Components Section -->
-        <section id="coded-components" class="content-section" hidden>
-          <!-- Components content here -->
-        </section>
-
-        <!-- Writings Section -->
-        <section id="writings" class="content-section" hidden>
-          <!-- Writings content here -->
         </section>
       </main>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <p class="footer-copyright">Iman Nazri 2026</p>
+        <div class="footer-links">
+          <a
+            href="https://github.com/imanazri"
+            class="social-icon"
+            aria-label="GitHub"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/icons/GithubLogo.svg" alt="GitHub" />
+          </a>
+          <a
+            href="https://x.com/ImnNazri"
+            class="social-icon"
+            aria-label="Twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/icons/XLogo.svg" alt="Twitter" />
+          </a>
+          <a
+            href="mailto:hye.imannazri@gmail.com"
+            class="social-icon"
+            aria-label="Email"
+          >
+            <img src="./assets/icons/EnvelopeOpen.svg" alt="Email" />
+          </a>
+        </div>
+      </footer>
     </div>
 
     <!-- UnicornStudio Script -->
     <script type="text/javascript">
-      !function(){var u=window.UnicornStudio;if(u&&u.init){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){u.init()})}else{u.init()}}else{window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.0.5/dist/unicornStudio.umd.js",i.onload=function(){if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",function(){UnicornStudio.init()})}else{UnicornStudio.init()}},(document.head||document.body).appendChild(i)}}();
+      !(function () {
+        var u = window.UnicornStudio;
+        if (u && u.init) {
+          if (document.readyState === "loading") {
+            document.addEventListener("DOMContentLoaded", function () {
+              u.init();
+            });
+          } else {
+            u.init();
+          }
+        } else {
+          window.UnicornStudio = { isInitialized: !1 };
+          var i = document.createElement("script");
+          ((i.src =
+            "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.0.5/dist/unicornStudio.umd.js"),
+            (i.onload = function () {
+              if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", function () {
+                  UnicornStudio.init();
+                });
+              } else {
+                UnicornStudio.init();
+              }
+            }),
+            (document.head || document.body).appendChild(i));
+        }
+      })();
     </script>
   </body>
 </html>
