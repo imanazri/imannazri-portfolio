@@ -408,6 +408,9 @@
   .object-center {
     object-position: center;
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
