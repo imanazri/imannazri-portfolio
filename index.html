@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iman Nazri - Portfolio</title>
-    <link rel="stylesheet" href="./css/stylesheet.css" />
+    <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body>
-    <!-- UnicornStudio Background Animation -->
-    <div data-us-project="IC5FNs23uGNpgjkR1Jcl" id="unicorn-bg"></div>
-
+    <!-- GRAIN OVERLAY -->
+    <div class="grain" aria-hidden="true"></div>
     <!-- MAIN CONTAINER-->
     <div class="container">
       <!-- HEADER SECTION -->
@@ -23,8 +22,9 @@
           />
 
           <!-- Text Content -->
+           <p class="text-blue-600 text-4xl">hello anjing</p>
           <div class="header-text">
-            <h1 class="h2">Designer in Blockchain & DeFI</h1>
+            <h1 class="h2">Designer in Crypto & AI</h1>
             <div class="header-subtext">
               <p class="body-text text-neutral-600">Iman Nazri</p>
               <p class="body-text text-neutral-200">|</p>
@@ -175,7 +175,7 @@
 
             <div class="project-preview">
               <img
-                src="./assets/images/ollio-2x-02-opt.jpg"
+                src="./assets/images/ollio-1.png"
                 alt="Project Preview"
                 loading="lazy"
               />
@@ -217,35 +217,5 @@
       </footer>
     </div>
 
-    <!-- UnicornStudio Script -->
-    <script type="text/javascript">
-      !(function () {
-        var u = window.UnicornStudio;
-        if (u && u.init) {
-          if (document.readyState === "loading") {
-            document.addEventListener("DOMContentLoaded", function () {
-              u.init();
-            });
-          } else {
-            u.init();
-          }
-        } else {
-          window.UnicornStudio = { isInitialized: !1 };
-          var i = document.createElement("script");
-          ((i.src =
-            "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v2.0.5/dist/unicornStudio.umd.js"),
-            (i.onload = function () {
-              if (document.readyState === "loading") {
-                document.addEventListener("DOMContentLoaded", function () {
-                  UnicornStudio.init();
-                });
-              } else {
-                UnicornStudio.init();
-              }
-            }),
-            (document.head || document.body).appendChild(i));
-        }
-      })();
-    </script>
   </body>
 </html>

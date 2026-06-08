@@ -11,3 +11,6 @@ claude-code.log
 
 # IDE
 .vscode/
+
+# depends
+node_modules/
