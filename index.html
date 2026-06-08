@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iman Nazri</title>
-    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preload" href="./src/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./src/output.css" /></noscript>
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="description" content="Iman Nazri — Product Designer in Crypto & AI. Currently designing at Etherscan, previously Solscan. Portfolio of blockchain UX and data visualisation work." />
     <meta property="og:title" content="Iman Nazri — Product Designer" />
@@ -38,6 +39,7 @@
 
       </nav>
 
+    <main>
       <!-- Hero Section -->
       <section class="relative flex flex-col gap-32 max-md:gap-24 pt-24 max-md:pt-12 pb-16">
 
@@ -144,13 +146,20 @@
                   loop
                   muted
                   playsinline
+                  preload="none"
                   class="w-full aspect-video object-cover"
                 ></video>
               </div>
 
               <!-- Row 2: two equal images -->
-              <img src="./assets/images/opt/mcp-2x-1.jpg" alt="Etherscan MCP UI widget kit — token overview panel" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="1" />
-              <img src="./assets/images/opt/mcp-2x-2.jpg" alt="Etherscan MCP UI widget kit — transaction details panel" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="2" />
+              <img src="./assets/images/opt/mcp-2x-1.jpg"
+                   srcset="./assets/images/opt/mcp-2x-1-400w.jpg 400w, ./assets/images/opt/mcp-2x-1-800w.jpg 800w, ./assets/images/opt/mcp-2x-1.jpg 2800w"
+                   sizes="(max-width: 640px) 100vw, (max-width: 870px) 100vw, 870px"
+                   alt="Etherscan MCP UI widget kit — token overview panel" loading="lazy" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="1" />
+              <img src="./assets/images/opt/mcp-2x-2.jpg"
+                   srcset="./assets/images/opt/mcp-2x-2-400w.jpg 400w, ./assets/images/opt/mcp-2x-2-800w.jpg 800w, ./assets/images/opt/mcp-2x-2.jpg 2800w"
+                   sizes="(max-width: 640px) 100vw, (max-width: 870px) 100vw, 870px"
+                   alt="Etherscan MCP UI widget kit — transaction details panel" loading="lazy" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="2" />
 
             </div>
 
@@ -198,6 +207,7 @@
                   loop
                   muted
                   playsinline
+                  preload="none"
                   class="w-full aspect-video object-cover object-[center_25%]"
                 ></video>
               </div>
@@ -253,14 +263,21 @@
                   loop
                   muted
                   playsinline
+                  preload="none"
                   class="w-full aspect-video object-cover"
                 ></video>
               </div>
 
               <!-- Row 2: image -->
-              <img src="./assets/images/opt/solscan-2x-1-opt.jpg" alt="Solscan Token Holders Visualizer — node graph of token holder distribution" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="2" />
+              <img src="./assets/images/opt/solscan-2x-1-opt.jpg"
+                   srcset="./assets/images/opt/solscan-2x-1-opt-400w.jpg 400w, ./assets/images/opt/solscan-2x-1-opt-800w.jpg 800w, ./assets/images/opt/solscan-2x-1-opt.jpg 2800w"
+                   sizes="(max-width: 640px) 100vw, (max-width: 870px) 100vw, 870px"
+                   alt="Solscan Token Holders Visualizer — node graph of token holder distribution" loading="lazy" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="2" />
               <!-- Row 3: image -->
-              <img src="./assets/images/opt/solscan-2x-2-opt.jpg" alt="Solscan Transaction Flow Visualizer — on-chain data node graph" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="3" />
+              <img src="./assets/images/opt/solscan-2x-2-opt.jpg"
+                   srcset="./assets/images/opt/solscan-2x-2-opt-400w.jpg 400w, ./assets/images/opt/solscan-2x-2-opt-800w.jpg 800w, ./assets/images/opt/solscan-2x-2-opt.jpg 2800w"
+                   sizes="(max-width: 640px) 100vw, (max-width: 870px) 100vw, 870px"
+                   alt="Solscan Transaction Flow Visualizer — on-chain data node graph" loading="lazy" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="3" />
 
             </div>
 
@@ -307,13 +324,20 @@
                   loop
                   muted
                   playsinline
+                  preload="none"
                   class="w-full aspect-video object-cover"
                 ></video>
               </div>
 
               <!-- Row 2: two equal images -->
-              <img src="assets/images/opt/ollio-2x-900-opt.jpg" alt="Ollio Compound Portfolio Tracker — position health dashboard" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="2" />
-              <img src="assets/images/opt/ollio-2x-2-900-opt.jpg" alt="Ollio Compound Portfolio Tracker — liquidation threshold tracking across chains" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="3" />
+              <img src="./assets/images/opt/ollio-2x-900-opt.jpg"
+                   srcset="./assets/images/opt/ollio-2x-900-opt-400w.jpg 400w, ./assets/images/opt/ollio-2x-900-opt-800w.jpg 800w, ./assets/images/opt/ollio-2x-900-opt.jpg 2800w"
+                   sizes="(max-width: 640px) 100vw, (max-width: 870px) 100vw, 870px"
+                   alt="Ollio Compound Portfolio Tracker — position health dashboard" loading="lazy" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="2" />
+              <img src="./assets/images/opt/ollio-2x-2-900-opt.jpg"
+                   srcset="./assets/images/opt/ollio-2x-2-900-opt-400w.jpg 400w, ./assets/images/opt/ollio-2x-2-900-opt-800w.jpg 800w, ./assets/images/opt/ollio-2x-2-900-opt.jpg 2800w"
+                   sizes="(max-width: 640px) 100vw, (max-width: 870px) 100vw, 870px"
+                   alt="Ollio Compound Portfolio Tracker — liquidation threshold tracking across chains" loading="lazy" class="w-full h-120 max-md:h-65 max-sm:h-50 object-cover object-center max-sm:object-[center_10%] media-fade" data-stagger="3" />
 
             </div>
 
@@ -321,6 +345,7 @@
           <!-- /Portfolio Item 4 -->
 
        </section>
+    </main>
 
       <!-- Footer -->
       <footer class="mt-24 max-md:mt-12 py-5 flex items-center justify-between border-t border-black">
