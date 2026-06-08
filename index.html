@@ -6,6 +6,15 @@
     <title>Iman Nazri</title>
     <link rel="preload" href="./src/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="./src/output.css" /></noscript>
+    <style>
+      /* Critical: prevent icon flash before async CSS loads */
+      .icon-svg .icon-path-main,
+      .icon-svg .icon-path-secondary,
+      .icon-svg-delayed .icon-path-main,
+      .icon-svg-delayed .icon-path-secondary { fill: #044bae; }
+      .icon-svg .icon-path-secondary,
+      .icon-svg-delayed .icon-path-secondary { opacity: 0.2; }
+    </style>
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="description" content="Iman Nazri — Product Designer in Crypto & AI. Currently designing at Etherscan, previously Solscan. Portfolio of blockchain UX and data visualisation work." />
     <meta property="og:title" content="Iman Nazri — Product Designer" />
