@@ -19,6 +19,10 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -215,24 +219,6 @@
   }
   .row-3 {
     grid-row: 3;
-  }
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
   }
   .mx-auto {
     margin-inline: auto;
@@ -464,10 +450,6 @@
   .font-\[Switzer\,sans-serif\] {
     font-family: Switzer,sans-serif;
   }
-  .text-4xl {
-    font-size: var(--text-4xl);
-    line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -491,9 +473,6 @@
   .text-\[2\.25rem\] {
     font-size: 2.25rem;
   }
-  .text-\[10vw\] {
-    font-size: 10vw;
-  }
   .text-\[14px\] {
     font-size: 14px;
   }
@@ -506,35 +485,8 @@
   .text-\[20px\] {
     font-size: 20px;
   }
-  .text-\[clamp\(0px\,10vw\,5\.5vw\)\] {
-    font-size: clamp(0px, 10vw, 5.5vw);
-  }
-  .text-\[clamp\(0px\,10vw\,5px\)\] {
-    font-size: clamp(0px, 10vw, 5px);
-  }
-  .text-\[clamp\(0px\,10vw\,5vw\)\] {
-    font-size: clamp(0px, 10vw, 5vw);
-  }
-  .text-\[clamp\(0px\,10vw\,7vw\)\] {
-    font-size: clamp(0px, 10vw, 7vw);
-  }
   .text-\[clamp\(0px\,10vw\,9rem\)\] {
     font-size: clamp(0px, 10vw, 9rem);
-  }
-  .text-\[clamp\(0px\,10vw\,10rem\)\] {
-    font-size: clamp(0px, 10vw, 10rem);
-  }
-  .text-\[clamp\(0px\,10vw\,10vw\)\] {
-    font-size: clamp(0px, 10vw, 10vw);
-  }
-  .text-\[clamp\(0px\,10vw\,12rem\)\] {
-    font-size: clamp(0px, 10vw, 12rem);
-  }
-  .text-\[clamp\(0px\,10vw\,160px\)\] {
-    font-size: clamp(0px, 10vw, 160px);
-  }
-  .text-\[clamp\(0px\,15vw\,5\.5vw\)\] {
-    font-size: clamp(0px, 15vw, 5.5vw);
   }
   .leading-\[1\.35\] {
     --tw-leading: 1.35;
@@ -617,15 +569,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       color: color-mix(in oklab, var(--color-black) 30%, transparent);
     }
-  }
-  .text-blue-600 {
-    color: var(--color-blue-600);
-  }
-  .text-neutral-200 {
-    color: var(--color-neutral-200);
-  }
-  .text-neutral-600 {
-    color: var(--color-neutral-600);
   }
   .text-neutral-600\/70 {
     color: color-mix(in srgb, oklch(43.9% 0 0) 70%, transparent);
@@ -718,16 +661,21 @@
       padding: calc(var(--spacing) * 5);
     }
   }
-  .max-md\:text-2xl {
+  .max-md\:pt-12 {
     @media (width < 48rem) {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
+      padding-top: calc(var(--spacing) * 12);
     }
   }
   .max-md\:text-3xl {
     @media (width < 48rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .max-md\:text-lg {
+    @media (width < 48rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
   .max-md\:text-\[1\.75rem\] {
