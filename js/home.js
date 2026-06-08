@@ -125,3 +125,17 @@ if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
     tag.addEventListener('mousemove', moveCard);
   })();
 }
+
+const allHoverImages = [
+  './assets/images/opt/memes/cmeme1-opt.webp',
+  './assets/images/opt/memes/cmeme2-opt.png',
+  './assets/images/opt/memes/cmeme3-opt.jpg',
+  './assets/images/opt/memes/cmeme4-opt.webp',
+  './assets/images/opt/memes/aimeme1-opt.jpeg',
+  './assets/images/opt/memes/aimeme2-opt.jpg',
+  './assets/images/opt/memes/aimeme3-opt.avif',
+  './assets/images/opt/memes/aimeme4-opt.jpg',
+];
+window.addEventListener('load', () => {
+  allHoverImages.forEach((src) => { new Image().src = src; });
+});
