@@ -9,7 +9,6 @@
       "Courier New", monospace;
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-neutral-100: oklch(97% 0 0);
-    --color-neutral-200: oklch(92.2% 0 0);
     --color-neutral-600: oklch(43.9% 0 0);
     --color-neutral-700: oklch(37.1% 0 0);
     --color-black: #000;
@@ -21,14 +20,8 @@
     --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -672,12 +665,6 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
-  .max-md\:text-lg {
-    @media (width < 48rem) {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
   .max-md\:text-\[1\.75rem\] {
     @media (width < 48rem) {
       font-size: 1.75rem;
@@ -696,6 +683,12 @@
   .max-sm\:object-\[center_10\%\] {
     @media (width < 40rem) {
       object-position: center 10%;
+    }
+  }
+  .max-sm\:text-lg {
+    @media (width < 40rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
   .max-sm\:text-\[20vw\] {
@@ -862,6 +855,10 @@
 }
 .icon-svg-delayed .icon-path-secondary {
   animation: icon-pulse-fill-secondary 2s ease-in-out 2.2s infinite;
+}
+.subtitle-text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-animate, .hero-animate-image {

@@ -130,6 +130,11 @@
   animation: icon-pulse-fill-secondary 2s ease-in-out 2.2s infinite;
 }
 
+.subtitle-text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-animate,
   .hero-animate-image {
