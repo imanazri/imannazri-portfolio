@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iman Nazri</title>
 
+    <link rel="stylesheet" href="./src/output.css" />
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7C8KS994F"></script>
     <script>
@@ -15,17 +17,6 @@
       gtag('config', 'G-S7C8KS994F');
     </script>
 
-    <link rel="preload" href="./src/output.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="./src/output.css" /></noscript>
-    <style>
-      /* Critical: prevent icon flash before async CSS loads */
-      .icon-svg .icon-path-main,
-      .icon-svg .icon-path-secondary,
-      .icon-svg-delayed .icon-path-main,
-      .icon-svg-delayed .icon-path-secondary { fill: #044bae; }
-      .icon-svg .icon-path-secondary,
-      .icon-svg-delayed .icon-path-secondary { opacity: 0.2; }
-    </style>
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <meta name="description" content="Iman Nazri — Product Designer in Crypto & AI. Currently designing at Etherscan, previously Solscan. Portfolio of blockchain UX and data visualisation work." />
     <meta property="og:title" content="Iman Nazri — Product Designer" />
@@ -102,7 +93,7 @@
 
           <!-- Bio -->
           <p class="text-[1.5rem] max-sm:text-lg font-normal tracking-[-0.25px] text-black leading-[1.35] max-w-160">
-          Currently designing at Etherscan. Drawn to frontier technologies. Recently, tinkered alot with agentic coding + Expo Go to bridge the delight-gap that is often missed in static Figma canvas.
+          Currently designing at Etherscan. Designs data-dense products for both web and mobile. 
           </p>
 
           <!-- Social links -->
@@ -112,6 +103,7 @@
             <a href="https://github.com/imanazri" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">Github</a>
             <a href="https://x.com/ImnNazri" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">X</a>
             <a href="https://www.linkedin.com/in/imannazri/" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">Linkedin</a>
+            <a href="mailto:hye.imannazri@gmail.com" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">Email</a>
           </div>
         </div>
 
@@ -374,16 +366,17 @@
           <a href="https://github.com/imanazri" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">Github</a>
           <a href="https://x.com/ImnNazri" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">X</a>
           <a href="https://www.linkedin.com/in/imannazri/" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">LinkedIn</a>
+          <a href="mailto:hye.imannazri@gmail.com" class="text-[15px] font-medium tracking-[-0.5px] text-black underline underline-offset-2 hover:text-[#044bae] transition-colors">Email</a>
         </div>
       </footer>
 
     </div>
 
     <div id="crypto-hover-card" aria-hidden="true">
-      <img id="crypto-hover-img" src="" alt="" />
+      <img id="crypto-hover-img" alt="" />
     </div>
     <div id="ai-hover-card" aria-hidden="true">
-      <img id="ai-hover-img" src="" alt="" />
+      <img id="ai-hover-img" alt="" />
     </div>
 
     <script src="./js/home.js"></script>
